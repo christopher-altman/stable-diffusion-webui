@@ -10,7 +10,7 @@
 #clone_dir="stable-diffusion-webui"
 
 # Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
-export COMMANDLINE_ARGS="--precision=full --no-half"
+export COMMANDLINE_ARGS= --api --port  12345 --cors-allow-origins="https://www.painthua.com" --listen --precision=full --no-half --xformers --deepdanbooru --vae-path=models/VAE/vae-ft-mse-840000-ema-pruned.ckpt --skip-torch-cuda-test --gradio-img2img-tool color-sketch --share=true --theme=dark  --opt-split-attention --disable-safe-unpickle
 
 # python3 executable
 #python_cmd="python3"

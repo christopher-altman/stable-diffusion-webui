@@ -160,7 +160,7 @@ def webui():
             prevent_thread_lock=True
         )
         # after initial launch, disable --autolaunch for subsequent restarts
-        cmd_opts.autolaunch = False
+        cmd_opts.autolaunch = True
 
         # gradio uses a very open CORS policy via app.user_middleware, which makes it possible for
         # an attacker to trick the user into opening a malicious HTML page, which makes a request to the
